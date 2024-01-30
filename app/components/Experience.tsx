@@ -23,7 +23,7 @@ const Experience = () => {
                     </div>
                     <time
                         className="mb-1 text-sm font-normal leading-none text-sky-800 dark:text-sky-200/80">
-                        Abr. 2022 - Actualidad
+                        Apr. 2022 - Currently...
                     </time>
                     <h3 className="text-lg font-semibold text-yellow-800 dark:text-yellow-200 my-2">
                         Front-end Developer | <a href="https://www.software-shop.com/" className="text-slate-100" target="_blank">Software Shop</a>
