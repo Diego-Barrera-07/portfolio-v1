@@ -21,6 +21,7 @@ body {
       rgb(var(--background-end-rgb))),
     url(/img/header/bgTwo.jpg);
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 @layer utilities {
