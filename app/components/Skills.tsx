@@ -27,7 +27,6 @@ const Skills = () => {
                 Also in my work I have used <span className="text-gray-100">Blade</span> and Laravel,
                 as in my own projects I have used <span className="text-gray-100">EJS</span> with NodeJs.
             </p>
-            <div className="h-screen"></div>
         </motion.section>
     );
 }

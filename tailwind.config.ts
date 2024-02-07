@@ -20,6 +20,9 @@ const config: Config = {
       gridTemplateColumns: {
         // This rule is used to menu
         "1fr-auto": "1fr auto 1fr"
+      },
+      width:{
+        "48/100" : "48%"
       }
     },
   },
