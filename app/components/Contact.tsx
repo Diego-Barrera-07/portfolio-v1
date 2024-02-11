@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import { useRef } from "react";
 import Image from "next/image";
@@ -33,7 +33,7 @@ const Contact = () => {
                 <p className="text-sm md:text-base my-3 text-gray-400">
                     Looking for new opportunities, my inbox will be open to answer your questions about my work,
                     I can also give you my services as a Front-end developer with React, NextJs or Vanilla Javascript.
-                    In the same way as a Backend developer with NodeJs, I could create your API. I can also help you to make your landing page. Ask me if you haven't found your desired page, I might make it too!
+                    In the same way as a Backend developer with NodeJs, I could create your API. I can also help you to make your landing page. Ask me if you haven&apos;t found your desired page, I might make it too!
                 </p>
 
                 <div className="w-full md:w-8/12">

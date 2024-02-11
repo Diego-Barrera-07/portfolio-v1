@@ -19,7 +19,7 @@ const AboutMe = () => {
                     <h2 className="text-5xl font-raleway font-semibold mb-2">About me</h2>
                     <p className="text-xl font-raleway font-semibold text-slate-300">Take a look at my story</p>
                     <p className="text-sm md:text-base my-3 text-gray-400">
-                        Hey, I'm Diego Barrera! I'm passionate about creating software and I've been working on it for more than 2 years. Currently I am Front-end in a company that provides specialized software products to many Latin American universities.
+                        Hey, I&apos;m Diego Barrera! I&apos;m passionate about creating software and I&apos;ve been working on it for more than 2 years. Currently I am Front-end in a company that provides specialized software products to many Latin American universities.
                         <br /> <br />
                         One of my successes is to have been third place in my first NTTDATA Hackathon. This motivated me to continue deepening in this area of technology, in addition to understanding that this can provide solutions to different problems of everyday life, as well as to enhance business, services and other things.
                         <br /> <br />

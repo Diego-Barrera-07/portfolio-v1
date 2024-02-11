@@ -8,7 +8,7 @@ const Projects = () => {
                 <div className="w-full flex items-center flex-wrap gap-4 mt-12">
                     <div className="bg-slate-800 rounded-md p-4 md:w-48/100">
                         <p className="text-xl font-semibold mb-4">CityUbi</p>
-                        <p className="text-base text-gray-400 mb-4">Make sure your customers don't waste any more time, highlight your local products and services.</p>
+                        <p className="text-base text-gray-400 mb-4">Make sure your customers don&apos;t waste any more time, highlight your local products and services.</p>
                         <a href="https://www.cityubi.com/" target="_blank" className="bg-yellow-300 rounded-sm px-2 py-1 block float-right text-center
                          text-slate-700 font-semibold hover:bg-yellow-100 md:w-1/3">Explorer</a>
                     </div>
