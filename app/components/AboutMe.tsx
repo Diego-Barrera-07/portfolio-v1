@@ -8,7 +8,7 @@ const AboutMe = () => {
 
     return (
         <section className="mt-4">
-            <div className="md:grid md:grid-cols-2 mx-5">
+            <div className="lg:grid lg:grid-cols-2 mx-5">
                 <motion.div
                     initial={{ opacity: 0, y: 100, scale: 0.3 }}
                     whileInView={{ y: 50, scale: 1 }}
@@ -41,7 +41,7 @@ const AboutMe = () => {
                         alt="Picture of the author"
                         width={1440}
                         height={720}
-                        className="rounded-md w-full md:w-4/5 ml-auto mt-2"
+                        className="rounded-md w-full lg:w-4/5 ml-auto mt-2"
                     />
                 </motion.div>
             </div>

@@ -22,10 +22,37 @@ body {
     url(/img/header/bgTwo.jpg);
     background-attachment: fixed;
     overflow-x: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Transition to menu responsive */
+.transition {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+@keyframes expandHeight {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+
+  to {
+    height: 100vh;
+    opacity: 1;
+  }
+}
+
+.transition.expanding {
+  animation: expandHeight 0.5s ease-in-out;
+  height: 100vh; 
+  opacity: 1; 
 }
