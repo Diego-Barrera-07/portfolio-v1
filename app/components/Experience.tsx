@@ -25,9 +25,9 @@ const Experience = () => {
                         className="mb-1 text-sm font-normal leading-none text-sky-800 dark:text-sky-200/80">
                         Apr. 2022 - Currently...
                     </time>
-                    <h3 className="text-lg font-semibold text-yellow-800 dark:text-yellow-200 my-2">
+                    <p className="text-lg font-semibold text-yellow-800 dark:text-yellow-200 my-2">
                         Front-end Developer | <a href="https://www.software-shop.com/" className="text-slate-100" target="_blank">Software Shop</a>
-                    </h3>
+                    </p>
                     <p className="flex mb-4 text-sm md:text-base font-normal text-slate-300 text-pretty">
                         <span className="flex items-center justify-center mx-3 text-slate-100"><TbEaseInOutControlPoints /> </span>
                         I contribute to the development of interactive web applications using HTML, CSS and JavaScript, taking advantage of frameworks and libraries such as React.js and other animations to optimize website development time. Additionally, I use Blade as a PHP template.
@@ -64,9 +64,9 @@ const Experience = () => {
                         className="mb-1 text-sm font-normal leading-none text-sky-800 dark:text-sky-200/80">
                         Jul. 2021 - Apr. 2022
                     </time>
-                    <h3 className="text-lg font-semibold text-yellow-800 dark:text-yellow-200 my-2">
+                    <p className="text-lg font-semibold text-yellow-800 dark:text-yellow-200 my-2">
                         Web Developer |  <span className="text-slate-100">Freelance</span>
-                    </h3>
+                    </p>
                     <p className="flex mb-4 text-base font-normal text-slate-300 text-pretty">
                         <span className="flex items-center justify-center mx-3 text-slate-100"><TbEaseInOutControlPoints /> </span>
                         I contributed significantly to the development of interactive web applications. Using HTML, CSS and JavaScript, I used frameworks such as React.js and incorporated animations to speed up website development. Additionally, I used Blade as a template in PHP, adding a solid layer to the development toolset.
@@ -91,9 +91,9 @@ const Experience = () => {
                         className="mb-1 text-sm font-normal leading-none text-sky-800 dark:text-sky-200/80">
                         Jan. 2021 - Jun. 2021
                     </time>
-                    <h3 className="text-lg font-semibold text-yellow-800 dark:text-yellow-200 my-2">
+                    <p className="text-lg font-semibold text-yellow-800 dark:text-yellow-200 my-2">
                         Software programming technician |  <a href="https://twitter.com/SENAComunica" className="text-slate-100" target="_blank">Internship at SENA</a>
-                    </h3>
+                    </p>
                     <p className="flex mb-4 text-base font-normal text-slate-300 text-pretty">
                         <span className="flex items-center justify-center mx-3 text-slate-100"><TbEaseInOutControlPoints /> </span>
                         I developed the first page, a comprehensive platform that provided detailed information on the chemicals present in various areas of the site. Implemented an updateable inventory that dynamically responded to changes. In addition, I made it possible to view the location and details of each chemical in PDF format, with the versatility of being saved or viewed on any device.

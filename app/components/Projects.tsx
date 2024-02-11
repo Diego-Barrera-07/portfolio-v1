@@ -2,7 +2,7 @@ const Projects = () => {
     return (
         <section className="mt-16">
             <div className="mx-5">
-                <h2 className="text-5xl font-raleway font-semibold mb-2">Projects</h2>
+                <h5 className="text-5xl font-raleway font-semibold mb-2">Projects</h5>
                 <p className="my-4 text-gray-400">In this section you will learn about my personal projects</p>
                 {/* If you have more than one project add "justify-content: evenly" for better layout */}
                 <div className="w-full flex items-center flex-wrap gap-4 mt-12">

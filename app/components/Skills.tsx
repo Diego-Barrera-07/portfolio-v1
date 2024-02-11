@@ -11,7 +11,7 @@ const Skills = () => {
             transition={{ ease: "linear", duration: 1 }}
             viewport={{ root: scrollRef }}
         >
-            <p className="text-5xl font-raleway font-semibold mb-8">Skills</p>
+            <h4 className="text-5xl font-raleway font-semibold mb-8">Skills</h4>
             <div className="flex items-center flex-wrap gap-3">
                 <div className="bg-slate-600 text-center px-3 py-1 rounded-md">JavaScript</div>
                 <div className="bg-slate-600 text-center px-3 py-1 rounded-md">NextJs</div>
