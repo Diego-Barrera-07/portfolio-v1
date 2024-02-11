@@ -14,7 +14,7 @@ const Contact = () => {
             <section className="mt-16 mx-5 h-screen">
                 <div className="flex items-center mb-2">
                     <h2 className="text-5xl font-raleway font-semibold">Contact</h2>
-                    <motion.div className="ml-3"
+                    <motion.div className="ml-3 hidden md:block"
                         initial={{ opacity: 0, y: 300, x: 1000 }}
                         whileInView={{ opacity: 1, y: 0, x: 0 }}
                         transition={{ ease: "linear", duration: 0.5 }}

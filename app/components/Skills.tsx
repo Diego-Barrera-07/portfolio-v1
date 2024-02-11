@@ -21,7 +21,7 @@ const Skills = () => {
                 <div className="bg-slate-600 text-center px-3 py-1 rounded-md">MySQL</div>
                 <div className="bg-slate-600 text-center px-3 py-1 rounded-md">MongoDB</div>
             </div>
-            <p className="my-4 text-gray-400">
+            <p className="my-4 text-gray-400 text-sm">
                 These are the skills in which he has more mastery, however I have used while studying <span className="text-gray-100">C++</span>,
                 <span className="text-gray-100"> JAVA</span> and <span className="text-gray-100">Python</span> in algorithm projects such as a binary tree.
                 Also in my work I have used <span className="text-gray-100">Blade</span> and Laravel,

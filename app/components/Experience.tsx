@@ -12,8 +12,8 @@ const Experience = () => {
             <h2 className="text-5xl font-raleway font-semibold mb-8">Experience | 2+ years</h2>
             <ol className="relative border-s border-gray-200 ml-3">
                 <motion.li className="mb-10 ms-4"
-                    initial={{ opacity: 0, y:10 }}
-                    whileInView={{ opacity: 1, y: 0  }}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ ease: "linear", duration: 0.5 }}
                     viewport={{ root: scrollRef }}
                 >
@@ -28,31 +28,31 @@ const Experience = () => {
                     <h3 className="text-lg font-semibold text-yellow-800 dark:text-yellow-200 my-2">
                         Front-end Developer | <a href="https://www.software-shop.com/" className="text-slate-100" target="_blank">Software Shop</a>
                     </h3>
-                    <p className="flex mb-4 text-base font-normal text-slate-300 text-pretty">
+                    <p className="flex mb-4 text-sm md:text-base font-normal text-slate-300 text-pretty">
                         <span className="flex items-center justify-center mx-3 text-slate-100"><TbEaseInOutControlPoints /> </span>
                         I contribute to the development of interactive web applications using HTML, CSS and JavaScript, taking advantage of frameworks and libraries such as React.js and other animations to optimize website development time. Additionally, I use Blade as a PHP template.
                     </p>
-                    <p className="flex mb-4 text-base font-normal text-slate-300 text-pretty">
+                    <p className="flex mb-4 text-sm md:text-base font-normal text-slate-300 text-pretty">
                         <span className="flex items-center justify-center mx-3 text-slate-100"><TbEaseInOutControlPoints /> </span>
                         Implementation of responsive designs, optimized for a fluid user experience and SEO.
                     </p>
-                    <p className="flex mb-4 text-base font-normal text-slate-300 text-pretty">
+                    <p className="flex mb-4 text-sm md:text-base font-normal text-slate-300 text-pretty">
                         <span className="flex items-center justify-center mx-3 text-slate-100"><TbEaseInOutControlPoints /> </span>
                         Working closely with Backend designers and developers to ensure the integrity of the final product.
                     </p>
-                    <p className="flex mb-4 text-base font-normal text-slate-300 text-pretty">
+                    <p className="flex mb-4 text-sm md:text-base font-normal text-slate-300 text-pretty">
                         <span className="flex items-center justify-center mx-3 text-slate-100"><TbEaseInOutControlPoints /> </span>
                         Performing seamless conversion of PDF and Adobe files to code, ensuring a seamless transition from design to web implementation.
                     </p>
-                    <p className="flex mb-4 text-base font-normal text-slate-300 text-pretty">
+                    <p className="flex mb-4 text-sm md:text-base font-normal text-slate-300 text-pretty">
                         <span className="flex items-center justify-center mx-3 text-slate-100"><TbEaseInOutControlPoints /> </span>
                         Implementation of Git and GitHub to improve the code versioning system in the company, while actively participating in Back-end development meetings and discussions, providing perspectives from my Front-end experience and my training in software engineering.
                     </p>
                 </motion.li>
 
                 <motion.li className="mb-10 ms-4"
-                    initial={{ opacity: 0, y:10 }}
-                    whileInView={{ opacity: 1, y: 0  }}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ ease: "linear", duration: 0.75 }}
                     viewport={{ root: scrollRef }}
                 >
@@ -78,8 +78,8 @@ const Experience = () => {
                 </motion.li>
 
                 <motion.li className="mb-10 ms-4"
-                    initial={{ opacity: 0, y:10 }}
-                    whileInView={{ opacity: 1, y: 0  }}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ ease: "linear", duration: 1 }}
                     viewport={{ root: scrollRef }}
                 >
@@ -92,7 +92,7 @@ const Experience = () => {
                         Jan. 2021 - Jun. 2021
                     </time>
                     <h3 className="text-lg font-semibold text-yellow-800 dark:text-yellow-200 my-2">
-                        Software programming technician | <span className="text-slate-100">Internship</span>
+                        Software programming technician |  <a href="https://twitter.com/SENAComunica" className="text-slate-100" target="_blank">Internship at SENA</a>
                     </h3>
                     <p className="flex mb-4 text-base font-normal text-slate-300 text-pretty">
                         <span className="flex items-center justify-center mx-3 text-slate-100"><TbEaseInOutControlPoints /> </span>
