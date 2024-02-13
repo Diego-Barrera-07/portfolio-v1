@@ -12,13 +12,19 @@ const Footer = () => {
                     <span className="text-xl text-yellow-300"><AiFillCode /></span> Diego Barrera / 2024
                 </p>
                 <div className="flex items-center justify-center gap-3">
-                    <a href="https://twitter.com/turingdb" target="_blank" className="text-xl hover:text-yellow-300">
+                    <a href="https://twitter.com/turingdb" target="_blank" className="text-xl hover:text-yellow-300"
+                        aria-label="Go to Diego's Twitter(x) profile"
+                    >
                         <BsTwitterX />
                     </a>
-                    <a href="https://www.linkedin.com/in/diegobarreracoba/" target="_blank" className="text-xl hover:text-yellow-300">
+                    <a href="https://www.linkedin.com/in/diegobarreracoba/" target="_blank" className="text-xl hover:text-yellow-300"
+                          aria-label="Go to Diego's Linkedin profile"
+                    >
                         <FaLinkedin />
                     </a>
-                    <a href="https://github.com/Diego-Barrera-07" target="_blank" className="text-xl hover:text-yellow-300">
+                    <a href="https://github.com/Diego-Barrera-07" target="_blank" className="text-xl hover:text-yellow-300"
+                          aria-label="Go to Diego's Github profile"
+                    >
                         <FaGithub />
                     </a>
                 </div>
