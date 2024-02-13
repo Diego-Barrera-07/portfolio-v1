@@ -8,8 +8,8 @@ const Experience = () => {
     const scrollRef = useRef(null)
 
     return (
-        <section>
-            <h2 className="text-5xl font-raleway font-semibold mb-8">Experience | 2+ years</h2>
+        <section id="experience">
+            <h2 className="text-5xl font-raleway font-semibold mb-0 md:mb-8">Experience | 2+ years</h2>
             <ol className="relative border-s border-gray-200 ml-3">
                 <motion.li className="mb-10 ms-4"
                     initial={{ opacity: 0, y: 10 }}

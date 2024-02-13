@@ -11,7 +11,7 @@ const Contact = () => {
 
     return (
         <>
-            <section className="my-16 mx-5">
+            <section className="my-16 mx-5" id="contact">
                 <div className="flex items-center mb-2">
                     <h6 className="text-5xl font-raleway font-semibold">Contact</h6>
                     <motion.div className="ml-3 hidden md:block"

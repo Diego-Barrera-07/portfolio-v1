@@ -10,6 +10,7 @@ const Skills = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "linear", duration: 1 }}
             viewport={{ root: scrollRef }}
+            id="skills"
         >
             <h4 className="text-5xl font-raleway font-semibold mb-8">Skills</h4>
             <div className="flex items-center flex-wrap gap-3">

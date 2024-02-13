@@ -7,11 +7,11 @@ const AboutMe = () => {
     const scrollRef = useRef(null)
 
     return (
-        <section className="mt-4">
+        <section className="md:mt-14" id="aboutMe">
             <div className="lg:grid lg:grid-cols-2 mx-5">
                 <motion.div
                     initial={{ opacity: 0, y: 100, scale: 0.3 }}
-                    whileInView={{ y: 50, scale: 1 }}
+                    whileInView={{ y: 0, scale: 1 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ ease: "easeOut", duration: 1 }}
                     viewport={{ root: scrollRef }}

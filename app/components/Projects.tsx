@@ -1,6 +1,6 @@
 const Projects = () => {
     return (
-        <section className="mt-16">
+        <section className="mt-16" id="projects">
             <div className="mx-5">
                 <h5 className="text-5xl font-raleway font-semibold mb-2">Projects</h5>
                 <p className="my-4 text-gray-400">In this section you will learn about my personal projects</p>
