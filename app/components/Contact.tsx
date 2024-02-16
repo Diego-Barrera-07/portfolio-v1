@@ -3,11 +3,24 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
+import { sendEmail } from "@/lib/sendEmail";
 
 const Contact = () => {
 
     const scrollRef = useRef(null)
+
+    const value = {
+        name: "prueba 13",
+        email: "prueba@gmail.com",
+        message: "Hola, prueba"
+    }
+
+    const handleSubmit = async (event: React.FormEvent) => {
+        event.preventDefault();
+        await sendEmail(value);
+        console.log("Enviado");
+    };
+
 
     return (
         <>
@@ -37,7 +50,7 @@ const Contact = () => {
                 </p>
 
                 <div className="w-full md:w-8/12">
-                    <form action="">
+                    <form onSubmit={handleSubmit}>
                         <div className="flex flex-col">
                             <label htmlFor="" className="mt-4 mb-1 text-base">
                                 Email address
