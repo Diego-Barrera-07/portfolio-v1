@@ -1,26 +1,78 @@
 "use client"
 
-import { useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/lib/sendEmail";
 
+import { FaCheckCircle } from "react-icons/fa";
+import { BiSolidMessageAltError } from "react-icons/bi";
+
 const Contact = () => {
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+
+    const [data, setData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    })
+
+    const [popUp, setPopUp] = useState(false)
+    const [status, setStatus] = useState(true)
+    const [formMessage, setFormMessage] = useState("")
 
     const scrollRef = useRef(null)
 
-    const value = {
-        name: "prueba 13",
-        email: "prueba@gmail.com",
-        message: "Hola, prueba"
-    }
+    useEffect(() => {
+        if (popUp) {
+            setTimeout(() => {
+               setPopUp(false)
+            }, 5000)
+        }
+
+    }, [popUp, setPopUp])
 
     const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
-        await sendEmail(value);
-        console.log("Enviado");
-    };
 
+        if (!name || !email || !message) {
+            console.log('Campos vacíos')
+            return;
+        }
+
+        const formData = {
+            name,
+            email,
+            message
+        }
+
+        setData(formData)
+
+        try {
+            const response = await sendEmail(data);
+
+            if (response.ok) {
+                const data = await response.json();
+                console.log(data);
+                setPopUp(true)
+                setStatus(true)
+                setFormMessage("The information has been sent correctly, I will contact you as soon as possible.")
+            } else {
+                console.log(response)
+                const data = await response.json();
+                console.log(data);
+                setPopUp(true)
+                setStatus(false)
+                setFormMessage(data.message)
+            }
+        } catch (error: any) {
+            setPopUp(true)
+            setStatus(false)
+            setFormMessage(error.message)
+        }
+    };
 
     return (
         <>
@@ -51,22 +103,44 @@ const Contact = () => {
 
                 <div className="w-full md:w-8/12">
                     <form onSubmit={handleSubmit}>
+
+                        {
+                            popUp && (
+                                <div className="w-full flex items-center gap-2 md:gap-1 text-sm md:text-base text-slate-800 bg-white px-2 py-1 border-2 border-yellow-300 rounded-md">
+                                    {
+                                        status ? (
+                                            <span className="text-sm text-green-400">
+                                                <FaCheckCircle />
+                                            </span>
+                                        ) : (
+                                            <span>
+                                                <BiSolidMessageAltError />
+                                            </span>
+                                        )
+                                    }
+                                    <p>{formMessage}</p>
+                                </div>
+                            )
+                        }
+
                         <div className="flex flex-col">
                             <label htmlFor="" className="mt-4 mb-1 text-base">
                                 Email address
                             </label>
-                            <input type="email" name="" id=""
+                            <input type="text" id="email"
                                 placeholder="Enter your email address here"
                                 className="py-1 text-sm md:text-base bg-transparent border-b-2 border-yellow-300 focus:bg-yellow-300/10 outline-none text-yellow-300"
+                                onChange={(e) => setEmail(e.target.value)}
                             />
                         </div>
                         <div className="flex flex-col mt-3">
                             <label htmlFor="" className="mb-1 text-base">
                                 Your name
                             </label>
-                            <input type="text" name="" id=""
+                            <input type="text" id="name"
                                 placeholder="Enter your name here"
                                 className="py-1 text-sm md:text-base bg-transparent border-b-2 border-yellow-300 focus:bg-yellow-300/10 outline-none text-yellow-300"
+                                onChange={(e) => setName(e.target.value)}
                             />
                         </div>
                         <div className="flex flex-col mt-3">
@@ -74,9 +148,11 @@ const Contact = () => {
                                 Subject
                             </label>
                             <textarea
+                                id="message"
                                 cols={2}
                                 placeholder="Tell me what you need here and I will help you soon"
                                 className="py-1 text-sm md:text-base bg-transparent border-b-2 border-yellow-300 resize-none focus:bg-yellow-300/10 outline-none text-gray-300"
+                                onChange={(e) => setMessage(e.target.value)}
                             />
                         </div>
 

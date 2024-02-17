@@ -16,19 +16,27 @@ export async function POST(request: Request) {
     const message = formData.message
 
     if (!name || !email || !message) {
-        return Response.json({ message: "There are empty fields" });
+        return Response.json({ message: "There are empty fields" }, {
+            status: 400
+        });
     }
 
     if (!validateInput(name, alphabeticalRegex)) {
-        return Response.json({ message: `Invalid input validation, name expected` });
+        return Response.json({ message: `Invalid input validation, name expected` }, {
+            status: 400
+        });
     }
 
     if (!validateInput(email, emailRegex)) {
-        return Response.json({ message: `Invalid entry validation, email expected` });
+        return Response.json({ message: `Invalid entry validation, email expected` }, {
+            status: 400
+        });
     }
 
     if (!validateInput(message, alphanumericRegex)) {
-        return Response.json({ message: `Invalid input validation, expected alphanumeric message` });
+        return Response.json({ message: `Invalid input validation, expected alphanumeric message` }, {
+            status: 400
+        });
     }
 
     try {
