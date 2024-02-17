@@ -11,11 +11,6 @@ export async function GET() {
 export async function POST(request: Request) {
     const formData = await request.json()
 
-<<<<<<< HEAD
-=======
-    console.log(formData)
->>>>>>> 66f823df205ba7cb4ad09e36806710fad5813856
-
     const name = formData.name
     const email = formData.email
     const message = formData.message
