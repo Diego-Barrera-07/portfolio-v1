@@ -41,7 +41,7 @@ const Header = () => {
 
     return (
         <header className="w-full bg-black/90 lg:bg-transparent backcrop-blur-md lg:backdrop-blur-none fixed text-sm z-10">
-            <div className="w-full px-3 lg:px-28 py-2 lg:py-6 flex items-center justify-between lg:grid lg:grid-cols-1fr-auto">
+            <div className="w-full 2xl:w-9/12 2xl:mx-auto px-3 lg:px-28 py-2 lg:py-6 flex items-center justify-between lg:grid lg:grid-cols-1fr-auto">
                 <div>
                     <LinkScroll to="main" duration={500} offset={-80} smooth={true} className="w-11 p-2 text-center bg-slate-900 rounded-sm text-base mdtext-lg hover:cursor-pointer">DB</LinkScroll>
                 </div>

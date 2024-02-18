@@ -41,7 +41,7 @@ const AboutMe = () => {
                         alt="Picture of the author"
                         width={1440}
                         height={720}
-                        className="rounded-md w-full lg:w-4/5 ml-auto mt-2"
+                        className="rounded-md w-full lg:w-4/5 ml-auto mt-2 md:mt-0"
                     />
                 </motion.div>
             </div>
