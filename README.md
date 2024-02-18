@@ -1,24 +1,46 @@
+<a href="https://portfolio-v1-three-jet.vercel.app/">
+  <img alt="Precedent – Building blocks for your Next project" style="border-radius: 10px;" src="https://res.cloudinary.com/dl9xvkjkz/image/upload/v1708230126/portfiolio-v1/v4v9euyrd8oluvllxqzd.png">
+  <h1 align="center">Portfolio V1</h1>
+</a>
+
+<p align="center">
+ Save time and start showing who you are and your projects.
+</p>
+
+<p align="center">
+<a href="https://twitter.com/turingdb">
+    <img src="https://img.shields.io/twitter/follow/turingdb?style=flat&label=turingdb&logo=twitter&color=0bf&logoColor=fff" alt="Diego Barrera Twitter follower count" />
+  </a>
+</p>
+
+## Introduction
+
+A minimalist portfolio designed for developers seeking a customizable and efficient solution to showcase their identity, projects, experience, and skills. This open-source project encourages collaboration, allowing users to easily edit, enhance, and use it to present themselves to the world.
+
+## Performance, accessible and best practices.
+<p align="center">
+<a href="https://pagespeed.web.dev/analysis/https-portfolio-v1-three-jet-vercel-app/zryt2jgdw2?form_factor=desktop">
+  <img alt="Performance, accessible and best practices." src="https://res.cloudinary.com/dl9xvkjkz/image/upload/v1708231440/portfiolio-v1/xuemja0zpfw5ddkd5pl9.png">
+</a>
+</p>
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+You can also clone & create this repo locally with the following command:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npx create-next-app portfolio-v1 --example "https://github.com/Diego-Barrera-07/portfolio-v1"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then, install the dependencies with your package manager of choice:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm i
+yarn
+pnpm i
+```
 
 ## Learn More
 
