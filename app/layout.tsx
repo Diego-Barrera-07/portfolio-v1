@@ -10,9 +10,9 @@ const raleway = Raleway({
 })
 
 export const metadata: Metadata = {
-  title: "Diego Barrera | Front-end developer",
-  description: "Diego Barrera is a Front-end Developer and Freelancer. Let's make your ideal website.",
-  keywords: "Diego Barrera, Front-end developer, Freelancer, website, portfolio",
+  title: "John Doe | Front-end developer",
+  description: "John Doe is a Front-end Developer and Freelancer. Let's make your ideal website.",
+  keywords: "John Doe, Front-end developer, Freelancer, website, portfolio",
   icons: {
     icon: '/favicon.ico'
   }
